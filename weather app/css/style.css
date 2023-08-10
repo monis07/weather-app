@@ -1,0 +1,104 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    /*
+    box-sizing: border-box;--MEANS
+    content gets fit to the box that is being displayed
+    The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+    */
+    background: #222;
+}
+.main{
+    /* position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin:0 auto;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    color:#fff;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 13px;
+    padding:13px;
+    width:400px;
+    text-align:center;
+}
+.search{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border:0;
+    outline:0;
+    background:#ebfffc;
+    color:#555;
+    padding:5px 15px;
+    height:60px;
+    border-radius:30px;
+    font-size:18px;
+    flex:1;
+}
+.search button{
+    border:0;
+    outline:0;
+    background:#ebfffc;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    cursor:pointer;
+}
+.search button img{
+    width:16px;
+}
+.weather-icon{
+    width:170px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight:500;
+    margin-top: 0;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight:400;
+    margin-top:0px;
+}
+
+.details{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.col{
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+
+.col img{
+    width:40px;
+    margin-right: 10px;
+}
+
+.humidity,.wind{
+    font-size:28px;
+    margin-top:-6px;
+}
+
+.weather{
+    display: none;
+}
+.error{
+    text-align:left;
+    margin-left:10px;
+    font-size:14px;
+    margin-top:10px;
+    display:none;
+}
